@@ -1,9 +1,15 @@
 Implementation of the hylomorphism transformation. See [https://maartenfokkinga.github.io/utwente/mmf91m.pdf].
 
+To install using npm:
+
+```
+npm install git+https://git@github.com:nicolasblackburn/hylo.git
+```
+
 Usage examples:
 
 ```
-const hylo = require(./dist/hylo).hylo;
+const hylo = require(hylo).hylo;
 
 // This is equivalent to `[1,2,3].reduce((a, b) => a + b, 0)`;
 hylo(x => x.length, x => [x[0], x.slice(1)], (a, b) => a + b, 0, [1,2,3]); // returns 6
