@@ -1,8 +1,8 @@
 {
   "name": "hylo",
   "version": "1.0.0",
-  "description": "Hylomorphism implementation in Typescript",
-  "main": "hylo.js",
+  "description": "Implementation of the hylomorphism transformation. See [https://maartenfokkinga.github.io/utwente/mmf91m.pdf].",
+  "main": "dist/hylo.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

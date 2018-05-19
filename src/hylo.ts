@@ -6,11 +6,11 @@
  * @param nil - The return value in case the termination function is true for the initial generator
  * @param x - The initial generator
  */
-export function hylo<S, T, U>(pred: (s: S) => boolean, next: (s: S) => [T, S], add: (t: T, u: U) => U, nil: U, x: S): U {
+export function hylo<S, T, U>(pred: (s: S) => boolean, next: (s: S) => [U, S], add: (t: T, u: U) => T, nil: T, x: S): T {
     let y = nil;
     while (pred(x)) {
         const [a, b] = next(x);
-        y = add(a, y);
+        y = add(y, a);
         x = b;
     }
     return y;

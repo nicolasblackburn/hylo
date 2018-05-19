@@ -12,7 +12,7 @@ function hylo(pred, next, add, nil, x) {
     var y = nil;
     while (pred(x)) {
         var _a = next(x), a = _a[0], b = _a[1];
-        y = add(a, y);
+        y = add(y, a);
         x = b;
     }
     return y;
