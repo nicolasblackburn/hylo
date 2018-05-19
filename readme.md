@@ -14,7 +14,7 @@ const hylo = require(hylo).hylo;
 // This is equivalent to `[1,2,3].reduce((a, b) => a + b, 0)`
 hylo(x => x.length, x => [x[0], x.slice(1)], (a, b) => a + b, 0, [1,2,3]); // returns 6
 
-// Generating an array containing the numbers 0 to 2 inclusive
+// Generating an array containing the numbers 0 to 2 inclusively
 hylo(x => x < 3, x => [x, x + 1], (a, b) => a.concat([b]), [], 0); returns [0, 1, 2]
 
 // A range function
