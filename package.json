@@ -1,0 +1,11 @@
+{
+  "name": "hylo",
+  "version": "1.0.0",
+  "description": "Hylomorphism implementation in Typescript",
+  "main": "hylo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nicolas Blackburn <nicolas@nblackburn.ca>",
+  "license": "ISC"
+}
